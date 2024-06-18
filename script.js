@@ -12,7 +12,7 @@ const calculate = (btnValue) => {
   } else if (btnValue === "AC") {
     display.innerText = ""
   } else if (btnValue === "DEL") {
-    display.innerText = display.innerText.slice(0,0 -1)
+    display.innerText = display.innerText.slice(0,-1);
     
   } else {
     //If output is empty and button is specialChars then return
