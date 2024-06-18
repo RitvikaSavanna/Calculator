@@ -116,7 +116,7 @@
   font-family: 'Times New Roman', Times, serif;
 }
 body {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +141,7 @@ body {
 }
 
 #container {
-	width: 200px;
+	width: 100px;
 	padding: 8px 8px 20px 8px;
 	margin: 20px auto;
 	background-color: #ABABAB;
