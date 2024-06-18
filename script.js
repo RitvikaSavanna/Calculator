@@ -4,7 +4,7 @@ const specialChars = ["%", "*", "/", "-", "+", "="];
 let output = "";
 
 //Define function to calculate based on button clicked.
-const calculate = (btnValue) => {
+/*const calculate = (btnValue) => {
   display.focus();
   if (btnValue === "=" && output !== "") {
     //If output has '%', replace with '/100' before evaluating.
@@ -20,7 +20,17 @@ const calculate = (btnValue) => {
     output += btnValue;
   }
   display.value = output;
-};
+};*/
+
+
+function allclear() {
+    lastOperation.textContent = ""
+    currentOperation.textContent = ''
+   }
+   
+   function delete1() {
+   currentOperation.textContent.slice(0,-1)
+   }
 
 //Add event listener to buttons, call calculate() on click.
 buttons.forEach((button) => {
