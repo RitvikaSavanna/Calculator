@@ -1,69 +1,38 @@
-<html>
-	<head>
-	
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <div class="container">
+	<fieldset id="container">
+		<form name="calculator">
 
-		
-		<link
-		rel = "stylesheet"
-		href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		integrity = "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-		crossorigin = "anonymous"
-		referrerpolicy = "no-referrer"
-		/>
-		
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-		rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		/>
-		
-		<!-- Linking CSS file -->
-		<link rel = "stylesheet" href = "./styles.css" />
-		
-		<title>calculator</title>
-	</head>
+			<input id="display" type="text" name="display" readonly>
 
-    <body> 
-  
-        <!-- Create table -->
-        <table id="calcu"> 
-            <tr> 
-                <td colspan="3"> 
-                    <input type="text" id="result"> 
-                </td> 
-                <td><input type="button" value="c"></td> 
-            </tr> 
-      
-            <tr> 
-                <td><input type="button" value="1"></td> 
-                <td><input type="button" value="2"></td> 
-                <td><input type="button" value="3"></td> 
-                <td><input type="button" value="/"></td> 
-            </tr> 
-            <tr> 
-                <td><input type="button" value="4"></td> 
-                <td><input type="button" value="5"></td> 
-                <td><input type="button" value="6"></td> 
-                <td><input type="button" value="*"></td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="7"></td> 
-            <td><input type="button" value="8"></td> 
-            <td><input type="button" value="9"></td> 
-            <td><input type="button" value="-"></td> 
-        </tr> 
-        <tr> 
-            <td><input type="button" value="0"></td> 
-            <td><input type="button" value="."></td> 
-            <td><input type="button" value="="></td> 
-            <td><input type="button" value="+"></td> 
-        </tr> 
-    </table> 
-</body> 
-  
-</html>  
+			<input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+			<input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+			<input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+			<input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+			<br>
+			<input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+			<input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+			<input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+			<input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+			<br>
+			<input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+			<input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+			<input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+			<input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+			<br>
+			<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+			<input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+			<input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+			<input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+		</form>
+	</fieldset>
+</div>
+  </body>
+</html>
