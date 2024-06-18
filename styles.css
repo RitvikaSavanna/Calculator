@@ -50,7 +50,7 @@ body {
 	height: 42px;
 	font-size: 16px;
 	font-weight: bold;
-	border-radius: 4px;
+	border-radius: 50%;
 }
 
 .mathButtons {
