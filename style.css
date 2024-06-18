@@ -111,6 +111,7 @@ body {
 
 .operator {
 	color: #FFF;
+	padding: 5px;
 	text-shadow: -1px -1px 0px #44006F;
 	background-color: #D20000;
 	border-top: 2px solid #FF8484;
