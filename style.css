@@ -110,7 +110,14 @@ body {
 }
 
 .operator {
-	color: #2f9fff;
+	color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #D20000;
+	border-top: 2px solid #FF8484;
+	border-right: 2px solid #FF8484;
+	border-bottom: 2px solid #800000;
+	border-left: 2px solid #800000;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
 }
   
 

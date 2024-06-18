@@ -9,12 +9,11 @@ const calculate = (btnValue) => {
   if (btnValue === "=" && output !== "") {
     //If output has '%', replace with '/100' before evaluating.
     output = eval(output.replace("%", "/100"));
-  } else if (btnValue == "AC") {
+  } else if (btnValue === "AC") {
     display.innerText = ""
-      break
-  } else if (btnValue == "DEL") {
+  } else if (btnValue === "DEL") {
     display.innerText = display.innerText.slice(0, -1)
-      break
+    
   } else {
     //If output is empty and button is specialChars then return
     if (output === "" && specialChars.includes(btnValue)) return;
