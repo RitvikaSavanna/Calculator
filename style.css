@@ -5,7 +5,8 @@ body {
 }
 
 .text {
-	color:#98FF98;
+	color:#2c3e84;
+	background-color: goldenrod;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size:50px;
 	padding:5px;
