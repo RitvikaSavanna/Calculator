@@ -39,7 +39,7 @@ body {
 	border-right: 2px solid #FFF;
 	border-bottom: 2px solid #C1C1C1;
 	border-left: 2px solid #C1C1C1;
-	box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+	box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(0, 0, 0, 0.5);
 }
 
 #display {
