@@ -15,6 +15,7 @@ body {
 	padding:5px;
 	margin:5px;
 	text-align: center;
+	height:300px;
 }
 
 li {
@@ -33,7 +34,6 @@ ul {
 }
 li.uli {
 	text-align: center;
-	height:200px;
 }
   
 
