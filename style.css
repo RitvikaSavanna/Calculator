@@ -21,6 +21,7 @@ body {
 
 li {
 	display: inline;
+	justify-items:right ; 
 }
 
 li {
