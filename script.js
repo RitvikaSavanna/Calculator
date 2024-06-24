@@ -13,10 +13,8 @@ const calculate = (btnValue) => {
     display.innerText = ""
   } else if (btnValue === "DEL") {
     display.innerText = display.innerText.slice(0,-1);
-    
   } else {
-    //If output is empty and button is specialChars then return
-    if (output === "" && specialChars.includes(btnValue)) return;
+  if (output === "" && specialChars.includes(btnValue)) return;
     output += btnValue;
   }
   display.value = output;
