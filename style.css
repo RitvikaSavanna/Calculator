@@ -4,9 +4,20 @@ body {
 	background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+	padding: 25px;
+	background-color: white;
+	color: black;
+	font-size: 25px;
+
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+  
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+  
 .text {
 	color:#2c3e84;
 	background-color: goldenrod;

@@ -19,7 +19,10 @@ const calculate = (btnValue) => {
   display.value = output;
 };
 
-
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
 //Add event listener to buttons, call calculate() on click.
 buttons.forEach((button) => {
