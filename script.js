@@ -8,11 +8,11 @@ const calculate = (btnValue) => {
   display.focus();
   if (btnValue === "=" && output !== "") {
     output = eval(output.replace("%", "/100"))
-  }; else if (btnValue === "AC") {
+  } else if (btnValue === "AC") {
     display.innerText = ""
-  }; else if (btnValue === "DEL") {
+  } else if (btnValue === "DEL") {
     display.innerText = display.innerText.slice(0,-1)
-  }; else {
+  } else {
   if (output === " " && specialChars.includes(btnValue)) return
     output += btnValue
   };
