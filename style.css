@@ -1,24 +1,31 @@
+:root {
+	--grid-unit: 1rem;
+	--border-radius-base: 0.5rem;
+}
+  
+[data-theme="light"] {
+	--color-bg: #ffffff;
+	--color-fg: #000000;
+}
+  
+[data-theme="dark"] {
+	--color-bg: #000000;
+	--color-fg: #ffffff;
+}
+  
+
 body {
 	background-image: url('bg.jpg') ;
 	background-repeat: no-repeat;
 	background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-	
+	background-color: var(--color-bg);
+	color: var(--color-fg);
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-button {
-	padding: 25px;
-	background-color: white;
-	color: black;
-	font-size: 25px;
-}
-.dark-mode {
-	background-color: black;
-	color: white;
-}
-  
+
 .text {
 	color:#2c3e84;
 	background-color: goldenrod;
